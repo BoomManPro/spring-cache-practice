@@ -1,1 +1,11 @@
+spring:
+  cache:
+    cache-names: boommanpro
+    type: redis
+    redis:
+      time-to-live: 10s
+
+  redis:
+    host: localhost
+    port: 6379
 
