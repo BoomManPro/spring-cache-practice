@@ -1,0 +1,7 @@
+# Created by .ignore support plugin (hsz.mobi)
+
+## IDEA 忽略数据
+*.iml
+
+## 忽略默认的输出path
+target
