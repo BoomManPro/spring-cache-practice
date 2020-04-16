@@ -131,6 +131,8 @@ public class RedisEhcacheCache extends AbstractValueAdaptingCache {
         Object cacheKey = getKey(key);
         Object prevValue = null;
         // 考虑使用分布式锁，或者将redis的setIfAbsent改为原子性操作
+        //TODO 需要对key做锁操作,但是暂时没有发现什么时候会调用 putIfAbsent方法
+        // 看注释是事务时会调用
         prevValue = redisTemplate.opsForValue().get(cacheKey);
         if (prevValue == null) {
             long expire = getExpire();
