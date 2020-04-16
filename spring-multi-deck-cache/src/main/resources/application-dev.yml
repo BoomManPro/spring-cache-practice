@@ -1,0 +1,18 @@
+
+
+#自定义配置。expire统一单位为毫秒
+cache:
+  multi:
+    cacheNames: cache1,cache2,cache3
+    ehcache:
+      expireAfterWrite: 5000
+      maxEntry: 1000
+    redis:
+      defaultExpiration: 60000
+      expires:
+        cache1: 50000
+        cache2: 70000
+        cache3: 70000
+logging:
+  level:
+    cn.boommanpro.springcache.practice.cache: debug

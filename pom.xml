@@ -13,5 +13,7 @@
         <module>spring-single-deck-cache</module>
         <!--        Spring自定义缓存示例       -->
         <module>spring-custom-cache</module>
+        <!--        Spring多层缓存示例        -->
+        <module>spring-multi-deck-cache</module>
     </modules>
 </project>
